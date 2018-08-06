@@ -1,0 +1,270 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="f358b4c4-b96c-4918-963c-2538571adff4" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Stock Exchange Cube</ID>
+  <Name>Stock Exchange Cube</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="d5d04143-d69c-4363-8924-b4e09bc7f1a6">
+      <ID>Ticker Symbol SK</ID>
+      <Name>Ticker Symbol SK</Name>
+      <DimensionID>Dim Securities</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="56041daa-efd8-4a4f-b241-0b2cbfbfc5f0">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d78eed77-8035-4cc3-b18a-30edc06f2462">
+          <AttributeID>Dim HQ Location - Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f800ed01-d9ad-4458-be31-5584891e420c">
+          <AttributeID>Dim GICS - Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="9dabe9f4-df79-44b8-a296-d431ef926e84">
+      <ID>Dim Fundamentals</ID>
+      <Name>Dim Fundamentals</Name>
+      <DimensionID>Dim Fundamentals</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="16e4e90d-1798-4541-b633-1b0a1678045c">
+          <AttributeID>F1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0a7ad916-4ae1-4b4f-9f85-17ef26a51a1b">
+          <AttributeID>Ticker Symbol SK</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="e965e381-0ab9-469f-a7bd-96d9065ecfae">
+      <ID>Dim Date</ID>
+      <Name>Dim Date</Name>
+      <DimensionID>Dim Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="37f606ae-14db-4721-a4af-2526b548fb53">
+          <AttributeID>Date SK</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="6cfee6e0-ef90-4a93-961d-bd3e814dd03d">
+      <ID>Dim Fundamentals - Ticker Symbol SK</ID>
+      <Name>Dim Fundamentals - Ticker Symbol SK</Name>
+      <DimensionID>Dim Securities</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="5b063d7a-353b-4935-b54c-894b4c3bde51">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="579dc752-258e-4561-9e24-73699689a5a1">
+          <AttributeID>Dim HQ Location - Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="45e1dc38-ad4c-442c-bc03-d8e6f44d6515">
+          <AttributeID>Dim GICS - Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="7ac4dc00-0db0-45de-ae81-87dcd86262be">
+      <ID>Fact Stock Exchange</ID>
+      <Name>Fact Stock Exchange</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="a8add8af-c2f4-4675-886b-4cb6afd0076f">
+          <ID>Open</ID>
+          <Name>Open</Name>
+          <Source dwd:design-time-name="051b8c37-29be-40ae-8a94-7efb0b92bb09">
+            <DataType>Single</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="4558ad5b-d81c-4f2d-8de4-24c37b4b5dbd">
+              <TableID>edw_FactStockExchange</TableID>
+              <ColumnID>Open</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="1179c6df-94b7-40dc-ac72-a7d3b2ce1a45">
+          <ID>High</ID>
+          <Name>High</Name>
+          <Source dwd:design-time-name="ff3bc30b-dec6-4fe7-9310-191d37ad3431">
+            <DataType>Single</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="9d0005a0-4967-40a1-a3dc-504682ca02bc">
+              <TableID>edw_FactStockExchange</TableID>
+              <ColumnID>High</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="dc85b3a5-7051-442c-9ea1-3d4956e2affd">
+          <ID>Low</ID>
+          <Name>Low</Name>
+          <Source dwd:design-time-name="0546ee09-1080-4c7c-aafe-94f5d107a4af">
+            <DataType>Single</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="21698d14-ce93-4033-b16b-5e4fc87e9b37">
+              <TableID>edw_FactStockExchange</TableID>
+              <ColumnID>Low</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="0bdefa89-6934-422d-a405-8c1f21c77871">
+          <ID>Close</ID>
+          <Name>Close</Name>
+          <Source dwd:design-time-name="64edac46-9503-40c2-bb1e-e48f92c2e0d6">
+            <DataType>Single</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2b341cba-76c0-4183-b083-c8de22a51a95">
+              <TableID>edw_FactStockExchange</TableID>
+              <ColumnID>Close</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="7ed3bfc4-4aba-4151-a67e-b99878d762b8">
+          <ID>Adj Close</ID>
+          <Name>Adj Close</Name>
+          <Source dwd:design-time-name="4bd44d73-6725-4023-b439-becddb941854">
+            <DataType>Single</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2c92523b-f1d6-48b2-83ab-036dccd3d0df">
+              <TableID>edw_FactStockExchange</TableID>
+              <ColumnID>Adj_x0020_Close</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="59005d87-d359-41e6-adc0-fc60ad342495">
+          <ID>Volume</ID>
+          <Name>Volume</Name>
+          <Source dwd:design-time-name="cdedf72a-4841-4928-9e4f-f7ce0fbf4d2f">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="92a4edbf-3ba0-46c4-a81a-c54708e58d68">
+              <TableID>edw_FactStockExchange</TableID>
+              <ColumnID>Volume</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="ff27d76b-03f0-4c34-b507-c84f8a540343">
+          <ID>Fact Stock Exchange Count</ID>
+          <Name>Fact Stock Exchange Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="2dacc6cf-297f-46fc-91eb-abfeac5b8278">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="0c7a9b3b-ce72-4746-a703-3208d8fbc1d9">
+              <TableID>edw_FactStockExchange</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="7a5539df-17ee-4417-b5a1-08f16e0e7594">
+          <CubeDimensionID>Ticker Symbol SK</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="648c0806-a42b-4910-bdcd-a19c707cc290">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ff651f7d-a11f-44a3-8d6f-9887fc00393b">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="da41b305-573a-4464-8692-55d59d521c61">
+                    <TableID>edw_FactStockExchange</TableID>
+                    <ColumnID>TickerSymbolSK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="748d0ce5-5134-4006-96da-0f95b04df019">
+          <CubeDimensionID>Dim Fundamentals</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4c61cf0d-a3ac-4c7d-8da1-3f9053ca49f0">
+              <AttributeID>F1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="653414a5-bb0e-4d16-b521-20a337bd103d">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="88a86829-b56b-439b-a7d9-1e3724412d27">
+                    <TableID>edw_FactStockExchange</TableID>
+                    <ColumnID>F1</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="cd988a59-71be-4e38-8843-c85279673473">
+          <CubeDimensionID>Dim Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="730c5ce7-223f-45bf-ab9d-f956d7f8b75f">
+              <AttributeID>Date SK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9878eb49-2ddc-4381-ab23-a5f81cbf3ff7">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="84c26a4d-16e8-4f24-89fb-7f3c0c75fa64">
+                    <TableID>edw_FactStockExchange</TableID>
+                    <ColumnID>DateSK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="10841119-6919-497a-b687-89744c4218a7">
+          <CubeDimensionID>Dim Fundamentals - Ticker Symbol SK</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="50e53ebf-0840-4caa-b260-af99dae1829e">
+              <AttributeID>Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Dim Fundamentals</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Ticker Symbol SK</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="a857b369-4641-463c-acfe-e1654ebfd45b">
+    <DataSourceViewID>NYSE DW_View</DataSourceViewID>
+  </Source>
+</Cube>

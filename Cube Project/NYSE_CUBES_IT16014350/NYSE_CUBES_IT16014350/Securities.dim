@@ -1,0 +1,497 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="07efdc28-e476-471b-af82-03d127bcba30" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Securities</ID>
+  <Name>Securities</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="12" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1893" scrolltop="-2433" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="7345" y="10435" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="DimGICS" left="20" top="6147" logicalid="6" controlid="1" masterid="0" hint1="0" hint2="0" width="3895" height="2307" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000370f000003090000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="edw_DimGICS" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="DimHQLocation" left="5976" top="540" logicalid="7" controlid="2" masterid="0" hint1="0" hint2="0" width="4445" height="2667" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c00005d1100006b0a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="edw_DimHQLocation" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="DimSecurities" left="359" top="0" logicalid="8" controlid="3" masterid="0" hint1="0" hint2="0" width="3217" height="3747" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000910c0000a30e0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="edw_DimSecurities" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="1568" top="3447" logicalid="9" controlid="4" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_DimSecurities_DimGICS]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="3" sourceattachpoint="6" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="1967" y="6147" />
+              <point x="1967" y="3747" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="3276" top="1474" logicalid="10" controlid="5" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_DimSecurities_DimHQLocation]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="3" sourceattachpoint="18" destattachpoint="17" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="5976" y="1873" />
+              <point x="3576" y="1873" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1893</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-2433</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>75</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="208">
+            <Shape Id="Id" Expanded="false">
+              <Attributes>
+                <Attribute Id="Id" />
+                <Attribute Id="Address Of Headquarters" />
+                <Attribute Id="CIK" />
+                <Attribute Id="City" />
+                <Attribute Id="SEC Filings" />
+                <Attribute Id="Sector - Sub Industry" />
+                <Attribute Id="Security" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="State - City" Expanded="false">
+              <Attributes>
+                <Attribute Id="State - City" />
+              </Attributes>
+              <Position x="285" y="20" />
+            </Shape>
+            <Shape Id="State" Expanded="false">
+              <Attributes>
+                <Attribute Id="State" />
+              </Attributes>
+              <Position x="550" y="20" />
+            </Shape>
+            <Shape Id="GICS Sub Industry" Expanded="false">
+              <Attributes>
+                <Attribute Id="GICS Sub Industry" />
+              </Attributes>
+              <Position x="285" y="69" />
+            </Shape>
+            <Shape Id="GICS Sector" Expanded="false">
+              <Attributes>
+                <Attribute Id="GICS Sector" />
+              </Attributes>
+              <Position x="550" y="69" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="2cb937c6-ac26-40ff-8d35-b579bc2d5faa">
+    <DataSourceViewID>NYSE DW_View</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="a5db8532-c3af-404a-a78f-f6b1f61cc81a">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="35dd392c-1e73-405d-83eb-1c66e6652e93">
+      <ID>Id</ID>
+      <Name>Id</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="09c7c815-799c-4f19-81d4-2db11337faf3">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="89622cfb-2445-48a3-b937-50b66bd6f750">
+            <TableID>edw_DimSecurities</TableID>
+            <ColumnID>id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="5b0b9ff5-0cba-4317-af69-67306d614747">
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="995bfd17-4723-4c7d-95b8-d32f6c3b27b2">
+          <TableID>edw_DimSecurities</TableID>
+          <ColumnID>Ticker_x0020_symbol</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="3be40c88-d03e-4411-a7ce-6206ac3b25b3">
+          <AttributeID>Security</AttributeID>
+          <Name>Security</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="89c8909c-9d87-4f58-b169-645a04da3237">
+          <AttributeID>SEC Filings</AttributeID>
+          <Name>SEC Filings</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5946bc2f-c184-4245-b29d-9101cce82133">
+          <AttributeID>CIK</AttributeID>
+          <Name>CIK</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="48c50e11-1429-486c-8ef4-6244c9e20efc">
+          <AttributeID>GICS Sub Industry</AttributeID>
+          <Name>GICS Sub Industry</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c16e4bff-be06-4999-9eea-ba907005cc3b">
+          <AttributeID>Sector - Sub Industry</AttributeID>
+          <Name>Sector - Sub Industry</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0dd5e7f5-e4d7-4478-a2d4-d199bdb155c1">
+          <AttributeID>Address Of Headquarters</AttributeID>
+          <Name>Address Of Headquarters</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0abe300a-96b1-43e1-88cf-19c59af45db5">
+          <AttributeID>City</AttributeID>
+          <Name>City</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="bbf7ebd2-851c-4684-ad94-cd93d22f1f01">
+          <AttributeID>State - City</AttributeID>
+          <Name>State - City</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7affc68d-b63c-44ee-bff1-bc2f0dfbd5ac">
+          <AttributeID>Ticker Symbol</AttributeID>
+          <Name>Ticker Symbol</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f7d642e7-a419-4185-aaff-caae4bcf5dd2">
+      <ID>Security</ID>
+      <Name>Security</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="89d2f29f-d216-4bfd-8bda-51c71c047d47">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e8cc2696-bfa7-4413-97fa-76a754f123ac">
+            <TableID>edw_DimSecurities</TableID>
+            <ColumnID>Security</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="471da3a7-1ca4-4e42-8143-40573f8da588">
+      <ID>SEC Filings</ID>
+      <Name>SEC Filings</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="99c90ef9-478b-4e0b-9584-58287eff9b50">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="14c1601c-734e-400b-9c59-1e4cefca91a7">
+            <TableID>edw_DimSecurities</TableID>
+            <ColumnID>SEC_x0020_filings</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="80cae507-216a-4acc-bada-da8c10a86ba0">
+      <ID>CIK</ID>
+      <Name>CIK</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="634a757d-c266-478a-a7d5-c8f5279f98b5">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b402009a-a9ad-49b1-8c5e-2a8ac4f1995c">
+            <TableID>edw_DimSecurities</TableID>
+            <ColumnID>CIK</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f8868475-3bf5-4da7-a888-f36bfdd9b52b">
+      <ID>GICS Sub Industry</ID>
+      <Name>GICS Sub Industry</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a72fb54e-c7cc-4add-bf5b-cd660c6f6397">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ee0b5736-e8d7-43d7-95d2-22b29b7f52ff">
+            <TableID>edw_DimGICS</TableID>
+            <ColumnID>GICS_x0020_Sub_x0020_Industry</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="a152b9b1-8234-424c-9c64-b05da5afec2b">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fb1c78fa-1ca9-4b0b-b3ec-5295a56958ac">
+            <TableID>edw_DimGICS</TableID>
+            <ColumnID>GICS_x0020_Sector</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="c4d71906-dd59-4964-9254-eb562fb269d1">
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="6c822f43-c989-4683-af4a-e0e0639a0f65">
+          <TableID>edw_DimGICS</TableID>
+          <ColumnID>GICS_x0020_Sub_x0020_Industry</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="a098379c-5534-4b4a-8fea-7afcdc4bc91e">
+          <AttributeID>GICS Sector</AttributeID>
+          <Name>GICS Sector</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="eef1618a-08de-4570-b612-9b7f6aa65491">
+      <ID>GICS Sector</ID>
+      <Name>GICS Sector</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6cecc2ab-7482-4a65-9840-f348527b918a">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1a488e65-26cb-4594-8e8d-cd531646ab93">
+            <TableID>edw_DimGICS</TableID>
+            <ColumnID>GICS_x0020_Sector</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3bebbd0e-f205-4be5-b0ec-ecff56e08177">
+      <ID>Sector - Sub Industry</ID>
+      <Name>Sector - Sub Industry</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="faa5478e-9fe0-490d-b062-47b25dd89454">
+          <DataType>WChar</DataType>
+          <DataSize>511</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c50a6447-766c-407f-a9af-8198c39984a7">
+            <TableID>edw_DimGICS</TableID>
+            <ColumnID>Sector_x0020_-_x0020_Sub_x0020_industry</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f4fdfbb2-ab64-419e-b7bd-6a425a11002b">
+      <ID>Address Of Headquarters</ID>
+      <Name>Address Of Headquarters</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="84eb4686-51c1-44a0-8b7b-b4661df76112">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1ce7ff2d-025a-4c27-9b00-7f92abe36372">
+            <TableID>edw_DimHQLocation</TableID>
+            <ColumnID>Address_x0020_of_x0020_Headquarters</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5b627b76-8464-446b-9085-a2547409dd7d">
+      <ID>City</ID>
+      <Name>City</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="28115176-6828-4bfa-8044-45d3074a429f">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3b444eb8-9833-4709-b199-ed63af947e93">
+            <TableID>edw_DimHQLocation</TableID>
+            <ColumnID>City</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="408d2563-842e-4150-b38a-39511a2504f6">
+      <ID>State</ID>
+      <Name>State</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d6c34d08-b827-47ab-a614-90132b569599">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="43749eeb-9a42-4178-89bc-73730f58f23f">
+            <TableID>edw_DimHQLocation</TableID>
+            <ColumnID>State</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7a6cd45f-7824-475a-9fcd-3a1bb3c19e10">
+      <ID>State - City</ID>
+      <Name>State - City</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="05846923-2a24-4636-b85d-2a365a8dce5e">
+          <DataType>WChar</DataType>
+          <DataSize>511</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a39d2b1f-64fc-42d1-a801-9d6924743db5">
+            <TableID>edw_DimHQLocation</TableID>
+            <ColumnID>State_x0020_-_x0020_City</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="573b4538-f59d-4fb1-8426-baad64e8c800">
+          <AttributeID>State</AttributeID>
+          <Name>State</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="01ed5b6e-f175-40b6-a76d-778b4c1737f1">
+      <ID>Ticker Symbol</ID>
+      <Name>Ticker Symbol</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="eb871040-d526-4a6a-a940-b4b4b96010b3">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f865620e-b94a-4844-a779-51569d2ff814">
+            <TableID>edw_DimSecurities</TableID>
+            <ColumnID>Ticker_x0020_symbol</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="25546e55-578c-423d-867a-34a0ee1e20d3">
+      <ID>Hierarchy</ID>
+      <Name>Location Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="16b04bcc-f5d2-4a57-9a1a-45dfb260273b">
+          <ID>State</ID>
+          <Name>State</Name>
+          <SourceAttributeID>State</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="e4043c60-c9db-452a-9e53-60bd5255e8bd">
+          <ID>State - City</ID>
+          <Name>State - City</Name>
+          <SourceAttributeID>State - City</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="4cceb17a-b500-4276-be66-de38a6375395">
+      <ID>Hierarchy 1</ID>
+      <Name>GICS Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="921d4626-3c5f-4113-95d7-93eaae880870">
+          <ID>GICS Sector</ID>
+          <Name>GICS Sector</Name>
+          <SourceAttributeID>GICS Sector</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="35277953-e94f-41b6-96d6-178f88ba6c66">
+          <ID>GICS Sub Industry</ID>
+          <Name>GICS Sub Industry</Name>
+          <SourceAttributeID>GICS Sub Industry</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
